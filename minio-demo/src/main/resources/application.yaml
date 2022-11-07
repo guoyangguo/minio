@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: MinIO-demo
+  servlet:
+    multipart:
+      max-file-size: 100MB # 单个文件上传的大小
+      max-request-size: 50MB # 设置单次请求的文件的总大小
+# MinIO配置
+minio:
+  endpoint: http://182.92.0.107:9000
+  accessKey: minioadmin
+  secretKey: minioadmin
+
+
